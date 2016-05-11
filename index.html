@@ -1,18 +1,267 @@
-<html>
+<!doctype html>
+<html lang="en">
 
-	<head>
-		<link rel="stylesheet" type="text/css" href="./style.css">
-	</head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>xoxoAlchemist();</title>
+    <meta name="description" content="SOPHE: A Virtual Narrative">
+    <meta name="keywords" content=" project space, virtual notepad, html5, css, jquery, portfolio" />
+    <meta name="author" content="Janice Konadu">
 
-	<body>
+    <!--[if lt IE 9]> 
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script><![endif]-->
 
-		<!-- padding: the space between the object/text and the border
-			 margin: the space between one element and and another element
-		-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/component.css" />
+    <link rel="stylesheet" href="css/jquery.circliful.css">
+    <link href="css/perspectiveRules.css" rel="stylesheet" /> </head>
 
-		Hello world!
 
-		Janice is super cool and awesome. LOL.
-	</body>
+<body class="ready">
+    <div id="loader" class="loader se-pre-con">
+        <div id="smLoad"> <img src="svg/hourglass.svg" /> <br/> loading </div>
+    </div>
+    <div id="container" class="clearfix">
+        <nav>
+            <ul>
+                <li class="navLnk"><a href="index.html"><span> Home </span></li><li class="navLnk"><a href="#particles"><span> About </span></a></li>
+                <li class="navLnk"><a href="projects.html"><span> Projects </span></a></li>
+                <li class="navLnk"><a href="mix.html"><span> Mix </span></a></li>
+                <li class="navLnk"><a href="blog.html"><span> Blog </span></a></li>
+                <li class="navLnk"><a href="#contact"><span> Get in Touch </span></a></li>
+                <li id="nav-SocialLinks"> 
+                  <a class="socialLink" href="https://www.facebook.com/janice.konadu.3" target="_blank"><i class="fa fa-facebook-square"></i></a> 
+                  <a class="socialLink" href="https://github.com/janicekonadu" target="_blank"><i class="fa fa-twitter-square"></i></a> 
+                  <a class="socialLink" href="" target="_blank"><i class="fa fa-github-square"></i></a> 
+                  <a class="socialLink" href="https://www.linkedin.com/in/janice-konadu-520596100" target="_blank"><i class="fa fa-linkedin-square"></i></a> 
+                </li>
+            </ul>
+        </nav>
+        <div id="nav-logo" class="logo-0">
+            <a href="#Home"> <object type="image/svg+xml" data="svg/sopheLoader.svg" class="logo"> </object> </a>
+        </div>
+        <div id="content" class="clearfix">
+            <section id="top">
+                <div class="wrapper hStyle top-container" data-0=" top: 50px; opacity: 1;" data-450=" top: 15px; opacity:0; "> 
+                  <!-- img id="welcome" class="delay first" src="img/welcomeTo.png" / -->
+                    <h1 class="delay second"> <span class="normal"> Janice</span> <br/> <span class="strikeout"> Konadu </span></h1>
+                    <h2 class="delay third"> 
+                      <!--An ongoing virtual narrative that I'd never dream of finishing -->
+                      Student // Aspiring full-stack developer
+                    </h2> <img class="emblem delay fourth" src="img/emblem-down.png" /> <br>
+                    <a class="delay fourth takelook" href="#featured"><img id="tl-img" src="./img/takelook.png"> </a>
+                </div>
+                <!-- div id="demo1"><!--img alt="background" src="img/introBG1.png" / <div id="particle-target" ></div></div -->
+            </section>
+            <section id="featured">
+                <div class="wrapper">
+                    <div class="homeFormat"> <br>
+                        <div class="center">
+                            <h2 class="lilTitle"> FEATURED </h2>
+                            <h4 class="lilTitle">Hack's the new black, in case you haven't heard. </h4>
+                            <p> <span class="fit"> Here are some recent projects I've completed. Of course, they only count as a few out of the many ideas jumbling around in my head, but I promised myself I'd be steady. Anyway, choose whatever tickles your fancy. </span> </p>
+                        </div>
+                    </div>
+                    <div id="projectLinks" class="grid">
+                        <ul id="og-grid" class="center og-grid">
+                            <li class="space">
+                                <a class="proLink" href="no.html" data-largesrc="img/no4.png" data-title="No. Collection" data-description="A series of little doodle adventures I took once I got my handy dandy graphics tablet earlier this year. Take a look!" target="blank"> <img src="img/no4.png" alt="img01" /> </a>
+                            </li>
+                            <li class="space">
+                                <a class="proLink" href="mix.html" data-largesrc="img/mix.png" data-title="Mix" data-description="Cool custom audio visualizer with Souncloud using HTML5 Audio, CSS3, Javascript, and the Souncloud Audio API."> <img src="img/mix.png" alt="img01" /> </a>
+                            </li>                            
+                            <li class="space">
+                                <a class="proLink" href="motionpicture.html" data-largesrc="img/no2.png" data-title="Motion Picture" data-description="A double exposure concept I figured I'd try out after watching its implementation in the True Detective title sequence. <br>COMING SOON."> <img src="img/no2.png" alt="img01" /> </a>
+                            </li>
+                            <li class="space">
+                                <a class="proLink" href="http://team2191.com" data-largesrc="img/team2191.jpg" data-title=" FIRST Team 2191 Website" data-description="One of my first websites I'd ever built for my FIRST Robotics Team 2191 back home in NJ. A little bit cringe-worthy 'cause it's entirely image-based, but hey, I was a newbie."> <img src="img/team2191.jpg" alt="img01" /> </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="particles" class="bio">
+                        <div id="introThing">
+                            <div class="face"> <span class=" strikeout hStyle"> About Me</span> </div>
+                            <div class="pic"> <img class "me" src="img/me.jpg" /> <br/>
+                                <div id="short"> <b> <h2>Janice Konadu, 20. </h2> </b> <br/> NYU Sophomore. <br/> Computer Science. <br/> Aspiring Full Stack Developer <br/> <!--Creator of xoxoAlchemist --></div>
+                            </div>
+                            <div class="blurb">
+                                <h3> A major dork with a lot of whimsical ideas that pen and paper just won't do justice </h3>
+                                <p> Salutations!<br/> I'm Janice Konadu, a 20-year-old sophomore student at NYU's Tandon School of Engineering, recently dubbed J-Nice by a good number of my friends and described as "too nice to be a CS major," whatever that means. I suppose you could reasonably deduce that this site is some sort of big, bad showcase of my skills, but I'm hoping it'll stand for a little more than that. I'll be posting some projects I've created, jotting down ideas, experimenting dangerously like a true alchemist should. So think of this as a giant virtual notepad of sorts?<br/> </p>
+                                <div id="donut">
+                                    <div class="row">
+                                        <div class="col-lg-2">
+                                            <h3> Programming </h3>
+                                            <div id="test-circle"></div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <h3> Thinking </h3>
+                                            <div id="test-circle2"></div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <h3> Design </h3>
+                                            <div id="test-circle3"></div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <h3> Font Fanaticism </h3>
+                                            <div id="test-circle4"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="contact" class="contact">
+                        <div id="bottomBox_Left">
+                            <h1 class="hStyle"> Janice Konadu</h1>
+                            <h4>Student // Aspiring Full-Stack Developer</h4>
+                            <div class="lrgSocial"> 
+                              <a class="socialLink" href="https://www.facebook.com/janice.konadu.3" target="_blank"><i class="fa fa-facebook"></i></a> 
+                              
+                              <a class="socialLink" href="" target="_blank"><i class="fa fa-twitter"></i></a> 
+                              <a class="socialLink" href="https://github.com/janicekonadu" target="_blank"><i class="fa fa-github-alt"></i></a> 
+                              
+                              <a class="socialLink" href="https://www.linkedin.com/in/janice-konadu-520596100" target="_blank">
+                              <i class="fa fa-linkedin"></i></a> <br/> 
+
+                              <i class="fa fa-phone" aria-hidden="true"></i> <span>(609) 356-9714</span> 
+                              <i class="fa fa-file" aria-hidden="true"></i> <a target="_blank" href="JaniceKonadu_Resume.pdf"> Resumé</a> </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $("#loader").fadeOut("slow", function() {
+                $(this).addClass("hide");
+            });
+        });
+    </script>
+    <script src="js/jquery.circliful.min.js"></script>
+    <script type="text/javascript">
+        $('.first').addClass('animated fadeInDown');
+        $(window).load(function() {
+            setTimeout(function() {
+                $('.first').show().addClass('animated fadeIn');
+            }, 2500);
+            setTimeout(function() {
+                $('.second').show().addClass('animated fadeIn');
+            }, 3000);
+            setTimeout(function() {
+                $('.third').show().addClass('animated fadeIn');
+            }, 3500);
+            setTimeout(function() {
+                $('.fourth').show().addClass('animated fadeIn');
+            }, 4000);
+        });
+    </script>
+    <script src="js/grid.js"></script>
+    <script src="js/scroll.min.js"></script>
+    <script src="js/skrollr.min.js"></script>
+    <script>
+        $(function() {
+            Grid.init();
+        });
+    </script>
+    <script type="text/javascript">
+        var s = skrollr.init();
+    </script>
+    <script>
+        $(document).ready(function() {
+            var hasCreatedObjects = false;
+            $(window).scroll(function() {
+                var y = $(this).scrollTop();
+                if (y >= 1000) {
+                    if (!hasCreatedObjects) {
+                        hasCreatedObjects = true;
+                        $("#test-circle").circliful({
+                            animation: 1,
+                            animationStep: 5,
+                            foregroundBorderWidth: 10,
+                            backgroundBorderWidth: 10,
+                            backgroundColor: '#555',
+                            foregroundColor: '#aaa28a',
+                            percent: 85,
+                            textSize: 28,
+                            textStyle: 'font-size: 12px;',
+                            textColor: '#666',
+                            multiPercentage: 1,
+                            percentages: [10, 20, 30]
+                        });
+                        $("#test-circle2").circliful({
+                            animation: 1,
+                            animationStep: 5,
+                            foregroundBorderWidth: 10,
+                            backgroundBorderWidth: 10,
+                            backgroundColor: '#555',
+                            foregroundColor: '#aaa28a',
+                            percent: 90,
+                            textSize: 28,
+                            textStyle: 'font-size: 12px;',
+                            textColor: '#666',
+                            multiPercentage: 1,
+                            percentages: [10, 20, 30]
+                        });
+                        $("#test-circle3").circliful({
+                            animation: 1,
+                            animationStep: 5,
+                            foregroundBorderWidth: 10,
+                            backgroundBorderWidth: 10,
+                            backgroundColor: '#555',
+                            foregroundColor: '#aaa28a',
+                            percent: 70,
+                            textSize: 28,
+                            textStyle: 'font-size: 12px;',
+                            textColor: '#666',
+                            multiPercentage: 1,
+                            percentages: [10, 20, 30]
+                        });
+                        $("#test-circle4").circliful({
+                            animation: 1,
+                            animationStep: 5,
+                            foregroundBorderWidth: 10,
+                            backgroundBorderWidth: 10,
+                            backgroundColor: '#555',
+                            foregroundColor: '#aaa28a',
+                            percent: 100,
+                            textSize: 28,
+                            textStyle: 'font-size: 12px;',
+                            textColor: '#666',
+                            multiPercentage: 1,
+                            percentages: [10, 20, 30]
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+    <script src="js/jquery.particleground.min.js"></script>
+   
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#particles').particleground({
+                dotColor: '#777',
+                density: 4000,
+                lineColor: '#555',
+                particleRadius: 5,
+                proximity: 100,
+                parallax: false,
+                directionX: 'left'
+            });
+        });
+    </script>
+</body>
 
 </html>

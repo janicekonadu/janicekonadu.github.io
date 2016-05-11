@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type="text/css" href="../css/style-svg.css"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg  version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39" height="50.828" viewBox="0 0 39 50.828"
+	 overflow="visible" enable-background="new 0 0 39 50.828" xml:space="preserve">
+	 
+	<path class="spinObj objA" fill="none" stroke="#AFA187" stroke-width="2" d="M32.1,13.414l-12,12l-12-12l12-12L32.1,13.414z"/>
+	
+	<path class="spinObj objB" fill="none" stroke="#AFA187" stroke-width="2" d="M32.1,25.414l-12,12l-12-12l12-12L32.1,25.414z"/>
+	
+	<path class="spinObj objC" fill="none" stroke="#AFA187" stroke-width="2" d="M32.1,37.414l-12,12l-12-12l12-12L32.1,37.414z"/>
+	
+	<path class="spinObj objD" fill="none" stroke="#AFA187" stroke-width="2" d="M27.1,37.414l-7,7l-7-7l7-7L27.1,37.414z"/>
+		
+	<line class="spinObj objE" fill="none" stroke="#AFA187" stroke-width="2" x1="0" y1="38.115" x2="39" y2="38.115">
+	
+	</line>
+	
+</svg>
