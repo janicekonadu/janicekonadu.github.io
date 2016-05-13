@@ -275,7 +275,7 @@ section .wrapper, footer .wrapper {
 
 
 section#top {
-    background-image: url('../img/introBG1.png'); 
+    background-image: url('../img/introBG1.jpg'); 
     background-color: #000;
     background-attachment: fixed;
     background-size: cover;
@@ -498,7 +498,7 @@ border-bottom: 1px solid #606060;
   text-align: center;
   padding-top: 50px;
   padding-left: 40px;
-  background-image: url('../img/introBG1.png');
+  background-image: url('../img/introBG1.jpg');
   background-color: #000;
   background-attachment: fixed;
   background-size: cover;
@@ -541,7 +541,7 @@ border-bottom: 1px solid #606060;
  padding-left: 220px;
  width: 100%;
  height: 200px;
- background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 19%, rgba(0, 0, 0, 0.5) 100%), url('../img/introBG1.png');
+ background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 19%, rgba(0, 0, 0, 0.5) 100%), url('../img/introBG1.jpg');
  background-attachment: fixed;
  background-color: #000;
  background-size: cover;
@@ -593,7 +593,7 @@ border-bottom: 1px solid #606060;
 article {
   color:#fff;  
   background-color: #000;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 19%, rgba(0, 0, 0, 0.5) 100%), url('../img/introBG1.png');
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 19%, rgba(0, 0, 0, 0.5) 100%), url('../img/introBG1.jpg');
   background-size: cover;
   height: 100vh;
   text-align: center;
