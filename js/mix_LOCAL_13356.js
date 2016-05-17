@@ -14,16 +14,11 @@
 
   */
 
-<<<<<<< HEAD
   var AudioContext;
   var audio;
   var audioContext;
   var source;
   var analyser;
-=======
-    // stream track id 245909077
-    SC.stream('/tracks/245909077').then(function(sound){
->>>>>>> 0616ab3085bf55020a5b5682d07b90ba9f71a780
 
   /*
       > canvas: gets canvas element from HTML
@@ -165,11 +160,7 @@
 
   });
 
-<<<<<<< HEAD
 
   findTrack();
   initAudio();
 })();
-=======
-});
->>>>>>> 0616ab3085bf55020a5b5682d07b90ba9f71a780
