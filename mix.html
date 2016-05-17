@@ -1,65 +1,73 @@
 <!doctype HTML>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<html>
+    <head>
+          <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <title>xoxoAlchemist();</title>
-  <meta name="description" content="xoxoAlchemist: No Collection">
-  <meta name="keywords" content=" project space, virtual notepad, html5, css, jquery, portfolio" />
-  <meta name="author" content="Janice Konadu">
-
-
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+          <title>janiceKonadu();</title>
+          <meta name="description" content="xoxoAlchemist: No Collection">
+          <meta name="keywords" content=" project space, virtual notepad, html5, css, jquery, portfolio" />
+          <meta name="author" content="Janice Konadu">
 
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+          <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+          <![endif]-->
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
-  <link rel="stylesheet" href="css/style.css">  
-  <link rel="stylesheet" href="css/page.css">
+          <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
+          <link rel="stylesheet" href="css/style.css">  
+          <link rel="stylesheet" href="css/page.css">
+
+
+    </head>
 
   
-</head>
 
-<body>
+  <body class="mix">
 
-    <article class="player">
+      <article class="player">
 
-      <h1 class="hStyle strikeout"> MIX</h1>
-      <p>Little music player built with dabblings in HTML, CSS, JavaScript, and the Soundcloud Audio API<br/>
+        <div id="mixHead">
+
+        <h1 class="hStyle strikeout"> MIX</h1>
+        <h4>Little music player built with dabblings in HTML, CSS, JavaScript, and the <a href="https://developers.soundcloud.com/docs/api/guide">Soundcloud Audio API</a><br/>
         (Hoping to update it with more music data analyzation. And a playlist perhaps?) <br/>
-        Credits at the bottom</p>
-      <div class="spinner-wrap">
-        <div class="spinner-outer"></div>
-        <div class="spinner-center"></div>
-        <div class="spinner-bg"></div>
-        <div class="play-sprite"></div>
-      </div>
+        Credits at the bottom</h4>
       
-      <audio id="audio" loop="loop" data-bpm="76"></audio>
-      
-    </article>
+        </div>
 
-    <footer class="mixFooter">
-        Music: <a href="https://soundcloud.com/willaaaa/glass-animals-exxus"> Glass Animals - Exxus</a> 
-        from <a target="_blank" href="http://soundcloud.com">Soundcloud</a>
-        by <a target="_blank" href="https://soundcloud.com/willaaaa"> willaaaa </a> ||
 
-        <a href="projects.html"> Back to projects </a>
-        <br/> 
-        <a href="http://soundcloud.com" target="_blank"> <img src="https://developers.soundcloud.com/assets/logo_white-af5006050dd9cba09b0c48be04feac57.png" /> </a>
-    </footer>
+        <div id="playButton" class="spinner-wrap" style="zoom:.8;">
+            <div class="spinner-outer"></div>
+            <div class="spinner-center"></div>
+            <div class="spinner-bg"></div>
+            <div class="play-sprite"></div>
+        </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
-    <script src="js/mix.js"></script> 
+        <canvas id="theCanvas" width="1024" height="156" title="Press Play!"></canvas>
 
-</body>
+        <!--button id="playButton" type="button" class="btn btn-primary"><h1> Play Track!</h1></button--> 
+        </article>
 
+        <footer class="mixFooter">
+            Music: <a href="https://soundcloud.com/rosemary-fairweather/too-low"> Too Low</a> 
+            by <a target="_blank" href="https://soundcloud.com/rosemary-fairweather"> Rosemary Fairweather </a> 
+            from <a target="_blank" href="http://soundcloud.com">Soundcloud</a>||
+
+            <a href="projects.html"> Back to projects </a>
+            <br/> 
+            <a href="http://soundcloud.com" target="_blank"> <img src="https://developers.soundcloud.com/assets/powered_by_white-371bd6967352fcc89673d4c81f7e5661.png" /> </a>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/mix.js" type="text/javascript"></script>
+
+
+  </body>
 </html>

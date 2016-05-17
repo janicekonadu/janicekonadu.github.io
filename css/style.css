@@ -88,15 +88,15 @@ body{
 
 /*
 .se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999999;
-	background-color: #434343;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999;
+  background-color: #434343;
  / background-image: url('../img/tweed.png');
-	background-blend-mode: luminosity; /
+  background-blend-mode: luminosity; /
 }
 */
 /*
@@ -541,11 +541,10 @@ border-bottom: 1px solid #606060;
  padding-left: 220px;
  width: 100%;
  height: 200px;
- background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 19%, rgba(0, 0, 0, 0.5) 100%), url('../img/introBG1.jpg');
- background-attachment: fixed;
- background-color: #000;
- background-size: cover;
-
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 19%, rgba(0, 0, 0, 0.5) 100%), url('../img/introBG1.jpg');
+   background-attachment: fixed;
+   background-color: #000;
+   background-size: cover;
 }
 
 #bottomBox_Left{
@@ -589,12 +588,16 @@ border-bottom: 1px solid #606060;
   display:none;
 }
 
+.mix{
+   background-image: url('../img/introBG1.jpg');
+   background-attachment: fixed;
+   background-color: #000;
+   background-size: cover;
+}
+
 
 article {
   color:#fff;  
-  background-color: #000;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 19%, rgba(0, 0, 0, 0.5) 100%), url('../img/introBG1.jpg');
-  background-size: cover;
   height: 100vh;
   text-align: center;
   position: relative;
@@ -613,10 +616,23 @@ article h1{
   width: 100%;
   height: 100px;
   padding: 0;
-  color: #aaa28a;
-  
+  color: #aaa28a;  
+  background-color: rgba(0,0,0,.5);
 }
 
+
+.mixFooter, #mixHead{
+  width: 100%; 
+  background-color: rgba(0,0,0,0.5); 
+  padding-bottom: 10px;
+}
+
+#theCanvas{
+  -webkit-box-reflect: below 3px -webkit-linear-gradient(top, transparent, transparent 50%, rgba(255,255,255,0.2));
+  position: relative;
+  top: -5px;
+  margin: 0 auto;
+}
 
 .spinner-wrap {
   display: block;
