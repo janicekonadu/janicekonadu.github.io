@@ -12,10 +12,12 @@ hr{
   width: calc(100% - 180px);
 }
 
-
 nav ul{
   width:150px;
 }
+
+
+nav a{text-decoration: none;}
 
 .panel > .panel-heading, .type{
   color: #aaa28a;
