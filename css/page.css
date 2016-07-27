@@ -47,7 +47,7 @@ section p{
 }
 
 .bg-1 {
-  background: #000 url('../img/introBG1.png') no-repeat center center fixed;
+  background: #000 url('../img/introBG1.jpg') no-repeat center center fixed;
     color: #000;
     background-size:cover;
 }
