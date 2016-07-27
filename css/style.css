@@ -499,12 +499,11 @@ margin: 0 auto;
 
 .lrgSocial a{
   color: #aaa28a;
-  zoom: 1.5;
   margin: 0 5px;
 }
 
-.lrgSocial .resume{
-  zoom:1;
+.lrgSocial .socialLink{
+  zoom: 1.5;
 }
 
 .fa-phone{
