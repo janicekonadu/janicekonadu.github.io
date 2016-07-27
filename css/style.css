@@ -334,12 +334,11 @@ margin: 0 auto;
 }
 
 .emblem{
-  zoom: .4;
+  width: 66px;
+  height: 80px;
 }
 
-.takelook{
-  zoom: .5;
-}
+.takelook{width: 200px;height: 85px;}
 
 .takelook img{
     opacity: .6;
@@ -349,6 +348,8 @@ margin: 0 auto;
     -o-transition: all .5s ease-out;
     -ms-transition: all .5s ease-out;
     transition: all .5s ease-out;
+    width: 175px;
+    height: 74px;
 }
 
 .takelook img:hover{
@@ -640,6 +641,7 @@ article h1{
 .playing .play-sprite {
   background-position: -2px -18px;
 }
+
 
 @-webkit-keyframes spin-cw {
   from {
