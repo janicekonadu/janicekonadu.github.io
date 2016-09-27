@@ -17,13 +17,20 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/dots.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/default.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/component.css" />
     <link rel="stylesheet" href="css/jquery.circliful.css">
-    <link href="css/perspectiveRules.css" rel="stylesheet" /> </head>
+
+
+    <link href="css/perspectiveRules.css" rel="stylesheet" />  
+    <script src="js/dots.js"></script>
+
+
+</head>
 
 
 <body class="ready">
@@ -33,15 +40,16 @@
     <div id="container" class="clearfix">
         <nav>
             <ul>
-                <li class="navLnk"><a href="index.html"><span> Home </span></li><li class="navLnk"><a href="#particles"><span> About </span></a></li>
+                <li class="navLnk"><a href="index.html"><span> Home </span></li>
+                <li class="navLnk"><a href="#particles"><span> About </span></a></li>
                 <li class="navLnk"><a href="projects.html"><span> Projects </span></a></li>
                 <li class="navLnk"><a href="mix.html"><span> Mix </span></a></li>
                 <li class="navLnk"><a href="blog.html"><span> Blog </span></a></li>
                 <li class="navLnk"><a href="#contact"><span> Get in Touch </span></a></li>
                 <li id="nav-SocialLinks"> 
                   <a class="socialLink" href="https://www.facebook.com/janice.konadu.3" target="_blank"><i class="fa fa-facebook-square"></i></a> 
-                  <a class="socialLink" href="" target="_blank"><i class="fa fa-twitter-square"></i></a> 
-                  <a class="socialLink" href="https://github.com/janicekonadu" target="_blank"><i class="fa fa-github-square"></i></a> 
+                  <a class="socialLink" href="https://github.com/janicekonadu" target="_blank"><i class="fa fa-twitter-square"></i></a> 
+                  <a class="socialLink" href="" target="_blank"><i class="fa fa-github-square"></i></a> 
                   <a class="socialLink" href="https://www.linkedin.com/in/janice-konadu-520596100" target="_blank"><i class="fa fa-linkedin-square"></i></a> 
                 </li>
             </ul>
@@ -49,6 +57,17 @@
         <div id="nav-logo" class="logo-0">
             <a href="#Home"> <object type="image/svg+xml" data="svg/sopheLoader.svg" class="logo"> </object> </a>
         </div>
+
+        <div id="dotstyle">
+            <ul class="dots">
+              
+                <li class="inactive"> <a href="#top"> h </a></li>
+                <li class="inactive"> <a href="#featured"> h </a></li>
+                <li class="inactive"> <a href="#particles"> h </a></li>
+                <li class="inactive"> <a href="#contact"> h </a></li>
+            </ul>
+        </div>
+
         <div id="content" class="clearfix">
             <section id="top">
                 <div class="wrapper hStyle top-container" data-0=" top: 50px; opacity: 1;" data-450=" top: 15px; opacity:0; "> 
@@ -140,6 +159,7 @@
             </section>
         </div>
     </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="js/modernizr-2.6.2.min.js"></script>
@@ -166,6 +186,13 @@
             setTimeout(function() {
                 $('.fourth').show().addClass('animated fadeIn');
             }, 4000);
+
+
+            $('.dots li').click(function(){
+            $('.active').removeClass('active');
+            $(this).addClass('active');
+        });
+
         });
     </script>
     <script src="js/grid.js"></script>
