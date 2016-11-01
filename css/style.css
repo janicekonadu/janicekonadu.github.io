@@ -61,7 +61,7 @@
 
 
 body{
-  background-color: #D3D3D3;
+  background-color: #434343;
   overflow-x: hidden;
   margin: 0;
 }
@@ -363,7 +363,7 @@ margin: 0 auto;
 /* Featured*/
 
 #featured{
-  background-color: #d3d3d3;
+  background-color: #434343;
   height: 600px;
   padding-top:20px;
 }
