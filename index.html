@@ -1,302 +1,237 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>janiceKonadu();</title>
-    <meta name="description" content="SOPHE: A Virtual Narrative">
-    <meta name="keywords" content=" project space, virtual notepad, html5, css, jquery, portfolio" />
-    <meta name="author" content="Janice Konadu">
+    <title>Janice Konadu | Web </title>
 
-    <!--[if lt IE 9]> 
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
-    </script><![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+
     <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/dots.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/default.css" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/component.css" />
-    <link rel="stylesheet" href="css/jquery.circliful.css">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">  
 
-    <link href="css/perspectiveRules.css" rel="stylesheet" />  
-    <script src="js/dots.js"></script>
-
-
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
+<body>
 
-<body class="ready">
-    <div id="loader" class="loader se-pre-con">
-        <div id="smLoad"> <img src="svg/hourglass.svg" /> <br/> loading </div>
+      <img id="head" src="img/head.png" alt="head" />
+    <div id="comp"> <!--img src="img/comp.png" /--> </div>
+    <div id="sidedots">
+      <ul class="dots">             
+        <li id="bt0" class="active"> <a href="#comp"> h </a></li>
+        <li id="bt1" class="inactive"> <a href="#projects"> h </a></li>
+        <li id="bt2" class="inactive"> <a href="#bio"> h </a></li>
+        <li id="bt3" class="inactive"> <a href="#contact"> h  </a></li>
+      </ul>
     </div>
-    <div id="container" class="clearfix">
-        <nav>
-            <ul>
-                <li class="navLnk"><a href="index.html"><span> Home </span></li>
-                <li class="navLnk"><a href="#particles"><span> About </span></a></li>
-                <li class="navLnk"><a href="projects.html"><span> Projects </span></a></li>
-                <li class="navLnk"><a href="mix.html"><span> Mix </span></a></li>
-                <li class="navLnk"><a href="blog.html"><span> Blog </span></a></li>
-                <li class="navLnk"><a href="#contact"><span> Get in Touch </span></a></li>
-                <li id="nav-SocialLinks"> 
-                  <a class="socialLink" href="https://www.facebook.com/janice.konadu.3" target="_blank"><i class="fa fa-facebook-square"></i></a> 
-                  <a class="socialLink" href="#" target="_blank"><i class="fa fa-twitter-square"></i></a> 
-                  <a class="socialLink" href="https://github.com/janicekonadu" target="_blank"><i class="fa fa-github-square"></i></a> 
-                  <a class="socialLink" href="https://www.linkedin.com/in/janice-konadu-520596100" target="_blank"><i class="fa fa-linkedin-square"></i></a> 
-                </li>
-            </ul>
-        </nav>
-        <div id="nav-logo" class="logo-0">
-            <a href="#Home"> <object type="image/svg+xml" data="svg/sopheLoader.svg" class="logo"> </object> </a>
+    <div id="container">
+      <div id="reserved"><p> &copy; Janice Konadu. 2018. </p></div>
+      <header>
+          <img id="logo" src="img/jk_logo.png" alt="logo" />
+          <!-- <hr/> -->
+          <nav>
+              <ul>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#bio">Bio</a></li> 
+                  <li><a href="#contact">Contact &amp; Resume </a></li>
+              </ul>
+          </nav>
+      </header>
+      <!---Hero Section------------------>
+      <section id="hero">
+        <div id="opener">
+            <img src="img/jk_name.png" class="name" alt="name">
+            <p>When I'm not watching comedy specials or shopping online, I solve problems with code. So feel free to see what I've been up to below<img src="img/uscr.gif" id="uscr" alt="underscore"/>
+            </p>
+
+            <div id="prLink"><a href="#projects">projects <br/> v v v <br/> <i>[press down key]</i></a></a></div>
+
         </div>
+      </section>
+      <div id="particles"></div>
 
-        <div id="dotstyle">
-            <ul class="dots">
-              
-                <li class="inactive"> <a href="#top"> h </a></li>
-                <li class="inactive"> <a href="#featured"> h </a></li>
-                <li class="inactive"> <a href="#particles"> h </a></li>
-                <li class="inactive"> <a href="#contact"> h </a></li>
-            </ul>
-        </div>
+      <!---Projects Section------------------>
+      <div class="bg1">
+      <section id="projects" class="sborder">   
+            <div class="front">
+              <h1>
+                >>> projects
+                <img class="uscr2" src="img/uscr2.gif" alt="unscr2" />
+              </h1>
 
-        <div id="content" class="clearfix">
-            <section id="top">
-                <div class="wrapper hStyle top-container" data-0=" top: 50px; opacity: 1;" data-450=" top: 15px; opacity:0; "> 
-                  <!-- img id="welcome" class="delay first" src="img/welcomeTo.png" / -->
-                    <h1 class="delay second"> <span class="normal"> Janice</span> <br/> <span class="strikeout"> Konadu </span></h1>
-                    <h2 class="delay third"> 
-                      <!--An ongoing virtual narrative that I'd never dream of finishing -->
-                      Student // Aspiring full-stack developer
-                    </h2> <img class="emblem delay fourth" src="img/emblem-down.png" /> <br>
-                    <a class="delay fourth takelook" href="#featured"><img id="tl-img" src="./img/takelook.png"> </a>
-                </div>
-                <!-- div id="demo1"><!--img alt="background" src="img/introBG1.png" / <div id="particle-target" ></div></div -->
-            </section>
-            <section id="featured">
-                <div class="wrapper">
-                    <div class="homeFormat"> <br>
-                        <div class="center">
-                            <h2 class="lilTitle"> FEATURED </h2>
-                            <h4 class="lilTitle">Hack is the new Black </h4>
-                            <p> <span class="fit"> Here are some recent projects I've completed. Of course, they only count as a few out of the many ideas jumbling around in my head, but hopefully, they suffice. Choose whatever tickles your fancy. </span> </p>
+                <div id="projectWrap">
+                    <div class="pw">
+                      <div class="project subpW">
+                        <div>
+                          <h4><a href="https://devpost.com/software/unfiltered-pq0ci6" target="_blank">Unfiltered</a></h4>
+                  
+                          <p>Web application and app that informs users of their state's recent water quality test results (addressing the Flint Water Crisis)</p>
                         </div>
-                    </div>
-                    <div id="projectLinks" class="grid">
-                        <ul id="og-grid" class="center og-grid">
-                            <li class="space">
-                                <a class="proLink" href="http://projectologee.appspot.com/" target="_blank" data-largesrc="img/thumb5.png" data-title="Ologee" data-description="<b> MEDIUMS: Python, Google App Engine w/ Jinja2 templating, HTML(5), CSS(3), JavaScript</b><br/><br/>Resource for prospective US refugees that puts government forms and translators in one place. <br/> Sustainability and Social Impact Winner @ HackNYU 2017"> 
-                                <img src="img/thumb5.png" alt="img01" /> </a>
-                            </li>                        
-                            <li class="space">
-                                <a class="proLink" href="no.html" data-largesrc="img/no4.png" data-title="No. Collection" data-description="<b> MEDIUMS: Adobe Photoshop, Wacom Draw Graphics Tablet </b><br/><br/> A series of little doodle adventures I took once I got my handy dandy graphics tablet earlier this year. Take a look!" target="blank"> <img src="img/thumb1.png" alt="img01" /> </a>
-                            </li>
-                            <li class="space">
-                                <a class="proLink" href="mix.html" data-largesrc="img/mix.png" data-title="Mix" data-description="<b> MEDIUMS: HTML5 Audio & Canvas, CSS3, Javascript, Souncloud Audio API </b><br/><br/> Cool custom audio visualizer with Souncloud"> 
-                                <img src="img/thumb2.png" alt="img01" /> </a>
-                            </li>                            
-                            <li class="space">
-                                <a class="proLink" href="https://web.archive.org/web/20160317213759/http://team2191.com/" data-largesrc="img/team2191.jpg" data-title=" FIRST Team 2191 Website" data-description="<b> MEDIUMS: HTML, CSS(3), Photoshop, JavaScript </b><br/><br/> One of my first websites I'd ever built for my FIRST Robotics Team 2191 back home in NJ. It's entirely image-based, but hey, I was new to the game."> 
-                                <img src="img/thumb4.png" alt="img01" /> </a>
-                            </li>
+                        <div class="aw a1">hacknyu <br/> honorable <br/> mention <br/> 2018</div>
+                      </div>
 
-                            <!-- MOTION PICTURE:
-                            	A double exposure concept I figured I'd try out after watching its implementation in the True Detective title sequence. <br>COMING SOON.
-                            -->
-                        </ul>
-                    </div>
-                    <div id="particles" class="bio">
-                        <div id="introThing">
-                            <div class="pic"> <img class="me" src="img/me.jpg" /> <br/>
-                                <div id="short"> <b> Janice Konadu, 20. </b> <br/>  NYU Sophomore. // Computer Science. // Aspiring Full Stack Developer  
-                                </div>
-                            </div>
-                            <div class="blurb">
-                                <h3> I have a lot of whimsical ideas that pen and paper just won't do justice </h3>
-                                <p> Salutations!<br/> I'm Janice Konadu, a 21-year-old sophomore student at Mercer County Community College, recently dubbed J-Nice by a good number of my friends and described as "too nice to be a CS major," whatever that means. I suppose you could reasonably deduce that this site is some sort of big, bad showcase of my skills, but I'm hoping it'll stand for a little more than that. I'll be posting some projects I've created, jotting down ideas, experimenting dangerously like a true alchemist should. So feel free to have a look around.<br/> </p>
-                                <div id="donut">
-                                    <div class="row">
-                                        <div class="col-lg-2">
-                                            <h3> Programming </h3>
-                                            <div id="test-circle"></div>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <h3> Thinking </h3>
-                                            <div id="test-circle2"></div>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <h3> Design </h3>
-                                            <div id="test-circle3"></div>
-                                        </div>
-                                        <div class="col-lg-2">
-                                            <h3> Font Fanaticism </h3>
-                                            <div id="test-circle4"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                      <div class="project subpW">
+                        <div>  
+                          <h4><a href="http://projectologee.appspot.com" target="_blank">Ologee</a></h4>
+                        
+                          <p>Web resource for prospective US refugees that puts government forms and translator information in one place.</p>
                         </div>
-                    </div>
-                    <div id="contact" class="contact">
-                        <div id="bottomBox_Left">
-                            <h1 class="hStyle"> Janice Konadu</h1>
-                            <h4>Student // Aspiring Full-Stack Developer</h4>
-                            <div class="lrgSocial"> 
-                              <a class="socialLink" href="https://www.facebook.com/janice.konadu.3" target="_blank"><i class="fa fa-facebook"></i></a> 
-                              
-                              <a class="socialLink" href="" target="_blank"><i class="fa fa-twitter"></i></a> 
-                              <a class="socialLink" href="https://github.com/janicekonadu" target="_blank"><i class="fa fa-github-alt"></i></a> 
-                              
-                              <a class="socialLink" href="https://www.linkedin.com/in/janice-konadu-520596100" target="_blank">
-                              <i class="fa fa-linkedin"></i></a> <br/> 
+                        <div class="aw a2">hacknyu <br/> winner <br/>2017</div>
+                      </div>  
+                                  
+                      <div class="project subpW">
+                        <div>
+                          <h4><a href="" target="_blank">Denticaid</a></h4>
+                          
+                          <p>A data retrieval tool for Medicaid dental patients, which addresses their coverage based on their current dental needs and diagnoses and finds a nearby provider.</p>
+                        </div>
+                        <div class="aw a3">hacknyu <br/> winner <br/>2016</div>
+                      </div>
 
-                              <i class="fa fa-phone" aria-hidden="true"></i> <span>(609) 356-9714</span> &nbsp; | &nbsp;
-                              <i class="fa fa-file" aria-hidden="true"></i> <a target="_blank" href="JaniceKonadu_Resume.pdf"> Resumé</a> </div>
-                        </div>
+                      <div class="project">
+                          <h4><a href="mix.html" target="_blank">Mix</a></h4>
+                          
+                          <p>In browser Audio Visualization that uses music data <br/> from the Soundcloud API</p>
+                      </div>                
+                    </div>
+                    <div class="pw">
+                      <div class="project">
+                          <h4><a href="https://devpost.com/software/procrasticounter" target="_blank">Procrasticounter!</a></h4>
+                  
+                          <p>Chrome Extension that counts down to a specified event in a new tab</p>
+                      </div>
+
+                      <div class="project">
+                          <h4><a href="" target="_blank">Magic Musician</a></h4>
+                        
+                          <p>Application that takes MIDI music files and converts them into proper guitar chords, providing boths visuals and audio</p>
+                      </div>  
+                                  
+                      <div class="project">
+                          <h4><a href="https://web.archive.org/web/20170604111943/http://team2191.com/" target="_blank">Team 2191</a></h4>
+                          
+                          <p>One of the first websites I'd ever built for my high school robotics team. (Viewed via the Wayback Machine) </p>
+                      </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>        
+      </section>
+    </div>
+
+
+
+      <!---Bio Section------------------>
+      <section id="bio" class="sborder">
+        <h1>
+          >>> Bio
+          <img class="uscr2" src="img/uscr2.gif" alt="unscr2" />
+        </h1>
+        <p> My name is Janice Konadu. <br/>
+          I'm 22 years old, a Computer Science major at Mercer County Community College, and soon-to-be Junior at the <br/> New Jersey Insitute of Technology. <br/><br/>
+
+          I develop Web Applications, 
+          fiddle with Image Recognition, incorporate UI/UX Design, and code for social impact. <br/><br/>
+
+          Ultimately, I'd like to specialize in Full-Stack Web Development.<br/><br/>
+
+          I worked my last two summers at iD Tech Camps, first as a regular instructor and then as a lead, teaching courses in Python, Java, and Robotics to students as young as 7 years old.<br/><br/>
+
+
+          I've got two hacakathon wins under my belt, but one day I'm hoping to host my own.<br/><br/>
+
+
+          I've been recently dubbed J-Nice by a good number of my friends and described as "too nice to be a CS major," whatever that means. <br/><br/>
+
+          </p>
+      </section>
+
+      <div id="phone"></div>
+
+      <!---Contact Section------------------>
+      <section id="contact" class="sborder">
+          <div class="conText">
+            <h1>
+              >>> contact
+              <img class="uscr2" src="img/uscr2.gif" alt="unscr2" />
+            </h1>
+
+              <p>Let's work together! <br/><br/>
+                  You can contact me at <a href="mailto:jkonadu777@gmail.com?Subject=Hello,%20Janice!!">jkonadu777@gmail.com.</a> <br/>
+                  And <a target="_blank" href="JaniceKonadu_Resume.pdf">this</a> is my resume.
+
+                  <br/><br/>
+
+                  I'm also on <a href="https://github.com/janicekonadu" target="_blank">Github</a> <br/>
+                  <a href="https://www.facebook.com/janice.konadu.3" target="_blank">Facebook,</a> <br/>
+                  <a href="https://www.linkedin.com/in/janice-konadu-520596100/" target="_blank">Linkedin,</a> <br/>
+                  and <a href="https://devpost.com/JaniceKonadu" target="_blank">Devpost</a> <br/>
+
+
+              </p>
+          </div>
+      </section>
+
+        <!-- <img class="mini" src="img/fuzz.gif" alt="footEmblem" /> -->
+
+      <footer class="sborder">
+          <div><img id="logo" src="img/jk_logo.png" alt="logo" /></div>         
+          <div class="social">
+              <p> JANICE KONADU </p>
+              <a class="socialLink" href="#" target="_blank">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a class="socialLink" href="#" target="_blank">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a class="socialLink" href="#" target="_blank">
+                <i class="fa fa-github-alt"></i>
+              </a>
+              <a class="socialLink" href="#" target="_blank">
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <br/>
+          </div>
+      </footer>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="js/modernizr-2.6.2.min.js"></script>
-    <script type="text/javascript">
-        $(window).load(function() {
-            $("#loader").fadeOut("slow", function() {
-                $(this).addClass("hide");
-            });
-        });
-    </script>
-    <script src="js/jquery.circliful.min.js"></script>
-    <script type="text/javascript">
-        $('.first').addClass('animated fadeInDown');
-        $(window).load(function() {
-            setTimeout(function() {
-                $('.first').show().addClass('animated fadeIn');
-            }, 2500);
-            setTimeout(function() {
-                $('.second').show().addClass('animated fadeIn');
-            }, 3000);
-            setTimeout(function() {
-                $('.third').show().addClass('animated fadeIn');
-            }, 3500);
-            setTimeout(function() {
-                $('.fourth').show().addClass('animated fadeIn');
-            }, 4000);
-
-
-            $('.dots li').click(function(){
-            $('.active').removeClass('active');
-            $(this).addClass('active');
-        });
-
-        });
-    </script>
-    <script src="js/grid.js"></script>
     <script src="js/scroll.min.js"></script>
     <script src="js/skrollr.min.js"></script>
-    <script>
-        $(function() {
-            Grid.init();
-        });
-    </script>
     <script type="text/javascript">
         var s = skrollr.init();
-    </script>
-    <script>
-        $(document).ready(function() {
-            var hasCreatedObjects = false;
-            $(window).scroll(function() {
-                var y = $(this).scrollTop();
-                if (y >= 1000) {
-                    if (!hasCreatedObjects) {
-                        hasCreatedObjects = true;
-                        $("#test-circle").circliful({
-                            animation: 1,
-                            animationStep: 5,
-                            foregroundBorderWidth: 10,
-                            backgroundBorderWidth: 10,
-                            backgroundColor: '#555',
-                            foregroundColor: '#aaa28a',
-                            percent: 85,
-                            textSize: 28,
-                            textStyle: 'font-size: 12px;',
-                            textColor: '#666',
-                            multiPercentage: 1,
-                            percentages: [10, 20, 30]
-                        });
-                        $("#test-circle2").circliful({
-                            animation: 1,
-                            animationStep: 5,
-                            foregroundBorderWidth: 10,
-                            backgroundBorderWidth: 10,
-                            backgroundColor: '#555',
-                            foregroundColor: '#aaa28a',
-                            percent: 90,
-                            textSize: 28,
-                            textStyle: 'font-size: 12px;',
-                            textColor: '#666',
-                            multiPercentage: 1,
-                            percentages: [10, 20, 30]
-                        });
-                        $("#test-circle3").circliful({
-                            animation: 1,
-                            animationStep: 5,
-                            foregroundBorderWidth: 10,
-                            backgroundBorderWidth: 10,
-                            backgroundColor: '#555',
-                            foregroundColor: '#aaa28a',
-                            percent: 70,
-                            textSize: 28,
-                            textStyle: 'font-size: 12px;',
-                            textColor: '#666',
-                            multiPercentage: 1,
-                            percentages: [10, 20, 30]
-                        });
-                        $("#test-circle4").circliful({
-                            animation: 1,
-                            animationStep: 5,
-                            foregroundBorderWidth: 10,
-                            backgroundBorderWidth: 10,
-                            backgroundColor: '#555',
-                            foregroundColor: '#aaa28a',
-                            percent: 100,
-                            textSize: 28,
-                            textStyle: 'font-size: 12px;',
-                            textColor: '#666',
-                            multiPercentage: 1,
-                            percentages: [10, 20, 30]
-                        });
-                    }
-                }
-            });
-        });
-    </script>
+
+
+    </script> 
+
+
+    <script src="js/arrownav.js"></script>
     <script src="js/jquery.particleground.min.js"></script>
-   
     <script type="text/javascript">
         $(document).ready(function() {
             $('#particles').particleground({
-                dotColor: '#b8ae8e',
-                density: 7000,
-                lineColor: '#b8ae8e',
+                dotColor: '#ff003c',
+                density: 1000,
+                lineColor: '#ff003c',
                 particleRadius: 5,
-                proximity: 100,
+                proximity: 50,
                 parallax: false,
                 directionX: 'left'
             });
         });
-    </script>
-</body>
+    </script>   
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125185585-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-125185585-1');
+    </script> 
+
+</body>
 </html>

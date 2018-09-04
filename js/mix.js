@@ -110,6 +110,18 @@
 
           //  fillRect( x, y, width, height ) 
           canvasContext.fillRect(bar_x, canvas.height, bar_width, bar_height);
+          
+          // canvasContext.beginPath();
+          // canvasContext.arc(100,50,Math.abs(bar_height),0,2*Math.PI);
+          // canvasContext.stroke();
+
+          //           canvasContext.beginPath();
+          // canvasContext.arc(400,50,Math.abs(bar_height),0,2*Math.PI);
+          // canvasContext.stroke();
+
+        
+          if(i % 3 == 0 ) canvasContext.strokeStyle="#ff003c";
+          else canvasContext.strokeStyle="#fffff";
       }
     }
 
