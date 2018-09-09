@@ -1,18 +1,16 @@
+  $(document).ready(function() {
+
       if (window.console) console.log('start');
 
-        var sections = new Array("#comp", "#projects", "#bio", "#contact");
-        var num = 0;
-        var current = sections[num];
+      var sections = new Array("#comp", "#projects", "#bio", "#contact");
+      var num = 0;
+      var current = sections[num];
+      var curr = "";
+      var liE = "#bt" + num;
 
 
-        var liE = "#bt" + num;   
 
-      $(document).keydown(function(e)
-      {       
-
-
-        $(liE).removeClass('active'); 
-        $(liE).addClass('inactive'); 
+      $(document).keydown(function(e){       
 
         if (window.console) console.log('start agin');
         switch(e.which)
@@ -37,15 +35,48 @@
             break;  
         }
 
-        if (num < 4){
-        liE = "#bt" + num;
-        console.log(liE); 
+      }); 
 
-        $(liE).removeClass('inactive'); 
-        $(liE).addClass('active');  
+
+
+      $(document).scroll(function() { 
+
+        $('.view').each(function() {
+          if(isScrolledIntoView(this) == true){
+            $(liE).removeClass('active'); 
+            $(liE).addClass('inactive');  
+            curr = "#" + this.id;
+            // console.log(curr);
+            // console.log("*************************************");
+          }
+        });
+
+        switch(curr){
+          case "#hero":
+            num = 0;
+            break;
+
+          case "#projects":
+            num = 1;
+            break;
+
+          case "#bio":
+            num = 2;
+            break;
+
+          case "#contact":
+            num = 3;
+            break;
         }
 
-      });
+        liE = "#bt" + num;
+        $(liE).removeClass('inactive'); 
+        $(liE).addClass('active');
+
+        
+      }); 
+
+
 
       // shows a given element and hides all others
       function showViaKeypress(element_id)
@@ -58,4 +89,28 @@
           }, {
             duration: 800
           });    
-      }
+      };
+
+      function isScrolledIntoView(elem){
+          var docViewTop = $(window).scrollTop();
+          var docViewBottom = docViewTop + $(window).height();
+
+          var elemTop = $(elem).offset().top;
+          var elemBottom = elemTop + $(elem).height();
+
+          var eHeight = $(elem).height();
+          var wHeight = $(window).height();
+
+          var result = false;
+
+          if(eHeight > wHeight) {
+            result = ((docViewTop >= elemTop) && (docViewBottom <= elemBottom));
+          } else {
+            result = ((elemTop >= docViewTop) && (elemBottom <= docViewBottom));
+          }
+
+          return (result)
+          
+      };
+
+  });
