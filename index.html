@@ -13,15 +13,14 @@
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">  
+<!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">   -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 
 <body>
-
-      <img id="head" src="img/head.png" alt="head" />
-    <div id="comp"></div>
+    <div id="comp" class="view"></div>
     <div id="sidedots">
       <ul class="dots">             
         <li id="bt0" class="active"> <a href="#comp"> h </a></li>
@@ -34,6 +33,13 @@
       <div id="reserved"><p> &copy; Janice Konadu. 2018. </p></div>
       <header>
           <div><img id="logo" src="img/jk_logo.png" alt="logo" /></div>
+          <div id="mobBox">
+            <div class="pagename">JK | Dev. Portfolio</div>
+            <div class="upDown">
+                <a id="up"><i class="fas fa-angle-double-up"></i></a>
+                <a id="down"><i class="fas fa-angle-double-down"></i></a>
+            </div>
+          </div>
           <div>
             <nav>
                 <ul>
@@ -45,18 +51,15 @@
           </div>
       </header>
       <!---Hero Section------------------>
-      <section id="hero" class="view">
+      <section id="hero">
         <div id="opener">
             <img src="img/jk_name.png" class="name" alt="name">
             <p>When I'm not watching comedy specials or shopping online, I solve problems with code. So feel free to see what I've been up to below<img src="img/uscr.gif" id="uscr" alt="underscore"/>
             </p>
-
             <div id="prLink"><a href="#projects">projects <br/> v v v <br/> <i>[press down key]</i></a></a></div>
-
         </div>
       </section>
       <div id="particles"></div>
-
       <!---Projects Section------------------>
       <div class="bg1">
       <section id="projects" class="sborder view">   
@@ -65,27 +68,24 @@
                 >>> projects
                 <img class="uscr2" src="img/uscr2.gif" alt="unscr2" />
               </h1>
-
                 <div id="projectWrap">
                     <div class="pw">
                       <div class="project subpW">
                         <div>
-                          <h4><a href="https://devpost.com/software/unfiltered-pq0ci6" target="_blank">Unfiltered</a></h4>
-                  
+                          <h4><a href="https://devpost.com/software/unfiltered-pq0ci6" target="_blank">Unfiltered</a></h4>                  
                           <p>Web application and app that informs users of their state's recent water quality test results (addressing the Flint Water Crisis)</p>
                         </div>
                         <div class="aw a1">hacknyu <br/> honorable <br/> mention <br/> 2018</div>
                       </div>
-
+                      <!-- project-->
                       <div class="project subpW">
                         <div>  
-                          <h4><a href="http://projectologee.appspot.com" target="_blank">Ologee</a></h4>
-                        
+                          <h4><a href="http://projectologee.appspot.com" target="_blank">Ologee</a></h4>                
                           <p>Web resource for prospective US refugees that puts government forms and translator information in one place.</p>
                         </div>
                         <div class="aw a2">hacknyu <br/> winner <br/>2017</div>
                       </div>  
-                                  
+                      <!-- project-->            
                       <div class="project subpW">
                         <div>
                           <h4><a href="" target="_blank">Denticaid</a></h4>
@@ -94,10 +94,9 @@
                         </div>
                         <div class="aw a3">hacknyu <br/> winner <br/>2016</div>
                       </div>
-
+                      <!-- project-->
                       <div class="project">
-                          <h4><a href="mix.html" target="_blank">Mix</a></h4>
-                          
+                          <h4><a href="mix.html" target="_blank">Mix</a></h4>             
                           <p>In browser Audio Visualization that uses music data <br/> from the Soundcloud API</p>
                       </div>                
                     </div>
@@ -152,7 +151,7 @@
           </p>
       </section>
 
-      <div id="phone"></div>
+      <!-- <div id="phone"></div> -->
 
       <!---Contact Section------------------>
       <section id="contact" class="sborder view">
@@ -182,17 +181,17 @@
           <div><img id="logo" src="img/jk_logo.png" alt="logo" /></div>         
           <div class="social">
               <p> JANICE KONADU </p>
-              <a class="socialLink" href="#" target="_blank">
-                <i class="fa fa-facebook"></i>
+              <a class="socialLink" href="https://www.facebook.com/janice.konadu.3" target="_blank">
+                <i class="fab fa-facebook-f"></i>
               </a>
-              <a class="socialLink" href="#" target="_blank">
-                <i class="fa fa-twitter"></i>
+              <a class="socialLink" href="https://devpost.com/JaniceKonadu" target="_blank">
+                <img src="img/dp.png" />
               </a>
-              <a class="socialLink" href="#" target="_blank">
-                <i class="fa fa-github-alt"></i>
+              <a class="socialLink" href="https://github.com/janicekonadu" target="_blank">
+                <i class="fab fa-github-alt"></i>
               </a>
-              <a class="socialLink" href="#" target="_blank">
-                <i class="fa fa-linkedin"></i>
+              <a class="socialLink" href="https://www.linkedin.com/in/janice-konadu-520596100/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
               </a>
               <br/>
           </div>
