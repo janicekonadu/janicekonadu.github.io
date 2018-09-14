@@ -1,18 +1,34 @@
   $(document).ready(function() {
 
-      if (window.console) console.log('start');
-
       var sections = new Array("#comp", "#projects", "#bio", "#contact");
       var num = 0;
       var current = sections[num];
       var curr = "";
       var liE = "#bt" + num;
+      var secName = "";
 
+      $( "#up" ).click(function() {  
+          if (num > 0){
+            num -=1;
+            current = sections[num];
+            showViaKeypress(current);
+
+          } 
+      });
+
+      $( "#down" ).click(function() {  
+          if (num < 3){
+            num +=1;
+            current = sections[num];
+            showViaKeypress(current);
+
+          } 
+      });
 
 
       $(document).keydown(function(e){       
 
-        if (window.console) console.log('start agin');
+        // if (window.console) console.log('start agin');
         switch(e.which)
         {
           // user presses up key
@@ -52,20 +68,24 @@
         });
 
         switch(curr){
-          case "#hero":
+          case "#comp":
             num = 0;
+            secName = "JK | Dev. Portfolio";
             break;
 
           case "#projects":
             num = 1;
+            secName = "JK | Projects";
             break;
 
           case "#bio":
             num = 2;
+            secName = "JK | Bio";
             break;
 
           case "#contact":
             num = 3;
+            secName = "JK | Contact";
             break;
         }
 
@@ -73,6 +93,8 @@
         $(liE).removeClass('inactive'); 
         $(liE).addClass('active');
 
+
+        $('.pagename').html(secName);
         
       }); 
 
@@ -104,7 +126,7 @@
           var result = false;
 
           if(eHeight > wHeight) {
-            result = ((docViewTop >= elemTop) && (docViewBottom <= elemBottom));
+            result = ((docViewTop >= (elemTop-10)) && (docViewBottom <= elemBottom));
           } else {
             result = ((elemTop >= docViewTop) && (elemBottom <= docViewBottom));
           }
