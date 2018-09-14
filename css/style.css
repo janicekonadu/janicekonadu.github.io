@@ -8,9 +8,11 @@
 body{
   background-color: #333;
   border-top: 15px solid #ff003c;
-  background-image: url('../img/code.gif');
+  background-image: url('../img/code.gif'), url('../img/head.png'), url(../img/phone.png);
   background-repeat: no-repeat;
-  background-position: 60vh 0px;
+  background-position: 60vh 0px, -300px 2500px, -200px 3656px;
+
+  overflow-x: hidden;
 }
 
 a{
@@ -37,6 +39,11 @@ header{
 #logo, header nav, header hr{
   display: block;
   margin-left: 7%;
+}
+
+
+#logo2{
+  display: none;
 }
 
 header hr{
@@ -221,15 +228,16 @@ p{
 
 }
 
-#head{
+/*#head{
   z-index: -1;
   float: left;
   position: absolute;
   top: 2500px;
   left: -300px;
-}
+}*/
 
 #particles{
+  position: relative;
   float:right;
   width: 150px;
   height: 600px;
@@ -308,7 +316,7 @@ p{
   padding-top: 40px;
 }
 
-#contact{
+#contact, #bio{
   margin-bottom: 200px;
 }
 
@@ -335,7 +343,7 @@ p{
 }
 
 
-#phone{
+/*#phone{
   width: 916px;
   height: 431px;
   background-image: url(../img/phone.png);
@@ -345,8 +353,8 @@ p{
   left: -200px;
   top: 200px;
   /*border: 2px solid red;*/
-  z-index: -1;
-}
+/*  z-index: -1;
+}*/
 
 footer{
   width: 100%;
@@ -372,6 +380,11 @@ footer{
   border: 1px solid #ff003c;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.social img:hover{
+  zoom: 1.3;
+  transform: scale(1.3);
 }
 
 #copyright p{
@@ -461,4 +474,201 @@ header{
   position: absolute;
   bottom: 8px;
   margin-left: 10%;
+}
+
+#mobBox{
+  display: none;
+  width: 80%;
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    body{
+      background-position: 10vh 0px, center 2870px, -20px 3656px;
+      background-size: 100%, 50%, 50%;
+
+    }
+
+    section{
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    #head, 
+    #particles, 
+    #reserved, 
+    nav,
+    nav li, 
+    h1,
+    #sidedots{
+      display: none;
+    }
+
+    #container{
+      padding-top: 0;
+    }
+
+    nav{
+      border-left: 0px solid #000;
+    }
+
+    #mobBox{
+      display: grid;
+      grid-template-columns: 70% 30%;
+      width: 100%;
+      height: auto;
+      padding-top: 10px;
+    }
+
+    .upDown{
+      /*width: 100px;*/
+      height: auto;
+      /*position: fixed;*/
+      /*z-index: 99999;*/
+      color: #ff003c;
+      /*right: 30px;*/
+      /*top: 10px;*/
+      text-align: right;
+      margin-right: 40px;
+
+    }
+
+    .upDown i{
+      color: #ff003c;
+      font-size: 32pt;
+      margin-left: 15px;
+    }
+
+     .upDown i:hover{
+      color: #fff;
+    }
+
+    .upDown a{
+      font-size: 32pt;
+    }
+
+
+    header{
+     background-color: #414141;
+     position: fixed;
+     z-index: 999;
+     top: 0px;
+    width: 100%;
+    margin-top: 0;
+    height: 70px;
+    text-align: center;
+    padding: 0;
+
+    }
+
+    #logo{
+      display: none;
+    }
+
+    #logo2{
+      zoom: 0.4;
+      transform: scale(0.4);
+      display: block;
+      margin-bottom: 2px; 
+    }
+
+    #logo2, header nav{
+      margin: 0 auto;
+    }
+
+
+    #hero{
+      height: 600px;
+      margin-bottom: 20px;
+      position: relative;
+      top: -100px;
+      padding-top: 425px;
+    }
+    
+    #opener,
+    .name,
+    #opener p,
+    #prLink{
+      margin: 0 auto;
+    }
+
+    .name{
+      zoom: .9;
+      transform: scale(0.9);
+    }
+
+    #opener{
+      zoom: .75;
+      transform: scale(0.75);
+      width: 100%;
+      height:auto;
+     
+    }
+
+     #opener p{
+      margin-bottom: 20px;
+     }
+
+    #comp{
+      background-position: 550px 80px;
+      background-size: 40%;
+      height: 500px;
+
+
+    }
+
+    #projects{
+      padding-top: 30px;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+
+    #projects a:hover{
+      font-size: 40pt;
+    }
+
+    #projectWrap{
+      display: grid;
+      grid-template-columns: 100%; 
+      zoom: .85;
+      transform: scale(0.85);
+    }
+
+    #bio{
+      padding-top: 100px;
+    }
+
+    #bio p, #contact p{
+      margin: 0 auto;
+      text-align: center;
+      font-size: 14pt;
+    }
+
+    #bio p{
+      padding: 0 40px 0 20px;
+    }
+
+    #contact{
+      padding: 150px 0 0 60px;
+    }
+
+    .pagename{
+      font-family: 'Abel', sans-serif;
+      font-size: 22pt;
+      text-transform: uppercase;
+      color: #ff003c;
+      font-weight: bold;
+      padding: 7px 0 0 20px;
+      text-align: left;
+
+
+    -webkit-transition: all .5s ease-in; 
+    -moz-transition: all .5s ease-in; 
+    -o-transition: all .5s ease-in; 
+    -ms-transition: all .5s ease-in; 
+    transition: all .5s ease-in;
+    }
+
+
 }
