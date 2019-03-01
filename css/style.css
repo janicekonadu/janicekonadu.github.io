@@ -292,6 +292,7 @@ p{
 .subpW{
   display: grid;
   grid-template-columns: auto  150px;
+  min-height: 120px;
 }
 
 .aw{
