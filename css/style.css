@@ -8,9 +8,9 @@
 body{
   background-color: #333;
   border-top: 15px solid #ff003c;
-  background-image: url('../img/code.gif'), url('../img/head.png'), url(../img/phone.png);
+  background-image: url('../img/code.gif'), url('../img/hand.png'), url(../img/phone.png);
   background-repeat: no-repeat;
-  background-position: 60vh 0px, -300px 2500px, -200px 3656px;
+  background-position: 60vh 0px, -90px 2500px, -200px 3656px;
 
   overflow-x: hidden;
 }
